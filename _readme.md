@@ -1,16 +1,16 @@
-# [gulp](http://gulpjs.com)-<%= pluginName %> [![Build Status](https://secure.travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>.png?branch=master)](http://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>)
+# [gulp](http://gulpjs.com)-<%= pluginName %> [![Build Status](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>.svg?branch=master)](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>)
 
 > Lorem ipsum
 
 
 ## Install
 
-```
-npm install --save-dev gulp-<%= pluginName %>
+```bash
+$ npm install --save-dev gulp-<%= pluginName %>
 ```
 
 
-## Example
+## Usage
 
 ```js
 var gulp = require('gulp');
@@ -40,4 +40,4 @@ Lorem ipsum.
 
 ## License
 
-MIT © [<%= name %>](https://github.com/<%= githubUsername %>)
+[MIT](http://opensource.org/licenses/MIT) © [<%= name %>](https://github.com/<%= githubUsername %>)
