@@ -17,7 +17,7 @@ var gulp = require('gulp');
 var <%= camelPluginName %> = require('gulp-<%= pluginName %>');
 
 gulp.task('default', function () {
-	gulp.src('src/app.ext')
+	return gulp.src('src/app.ext')
 		.pipe(<%= camelPluginName %>())
 		.pipe(gulp.dest('dist'));
 });
