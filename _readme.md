@@ -40,4 +40,4 @@ Lorem ipsum.
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [<%= name %>](https://github.com/<%= githubUsername %>)
+MIT © [<%= name %>](https://github.com/<%= githubUsername %>)
