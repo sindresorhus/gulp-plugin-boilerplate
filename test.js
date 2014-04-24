@@ -15,7 +15,7 @@ it('should ', function (cb) {
 
 	stream.write(new gutil.File({
 		base: __dirname,
-		path: __dirname + 'file.ext',
+		path: __dirname + '/file.ext',
 		contents: new Buffer('unicorns')
 	}));
 
