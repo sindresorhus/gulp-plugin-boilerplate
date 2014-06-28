@@ -5,7 +5,7 @@
 
 ## Install
 
-```bash
+```sh
 $ npm install --save-dev gulp-<%= pluginName %>
 ```
 
@@ -17,7 +17,7 @@ var gulp = require('gulp');
 var <%= camelPluginName %> = require('gulp-<%= pluginName %>');
 
 gulp.task('default', function () {
-	return gulp.src('src/app.ext')
+	return gulp.src('src/file.ext')
 		.pipe(<%= camelPluginName %>())
 		.pipe(gulp.dest('dist'));
 });
@@ -32,7 +32,7 @@ gulp.task('default', function () {
 
 ##### foo
 
-Type: `Boolean`  
+Type: `boolean`  
 Default: `false`
 
 Lorem ipsum.
