@@ -1,7 +1,7 @@
 'use strict';
 var assert = require('assert');
 var gutil = require('gulp-util');
-var <%= camelPluginName %> = require('./index');
+var <%= camelPluginName %> = require('./');
 
 it('should ', function (cb) {
 	var stream = <%= camelPluginName %>();
