@@ -14,4 +14,4 @@ You can also just download or clone this repo, but remember to rename `_readme.m
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com)
