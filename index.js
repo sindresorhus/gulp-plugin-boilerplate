@@ -10,14 +10,12 @@ module.exports = function (options) {
 
 	return through.obj(function (file, enc, cb) {
 		if (file.isNull()) {
-			this.push(file);
-			cb();
+			cb(null, file);
 			return;
 		}
 
 		if (file.isStream()) {
-			this.emit('error', new gutil.PluginError('gulp-<%= pluginName %>', 'Streaming not supported'));
-			cb();
+			cb(new gutil.PluginError('gulp-<%= pluginName %>', 'Streaming not supported'));
 			return;
 		}
 

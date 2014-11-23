@@ -7,8 +7,7 @@ it('should ', function (cb) {
 	var stream = <%= camelPluginName %>();
 
 	stream.on('data', function (file) {
-		assert.equal(file.relative, 'file.ext');
-		assert.equal(file.contents.toString(), 'unicorns');
+		assert.strictEqual(file.contents.toString(), 'unicorns');
 	});
 
 	stream.on('end', cb);
