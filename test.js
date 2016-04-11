@@ -1,20 +1,19 @@
-'use strict';
-var assert = require('assert');
-var gutil = require('gulp-util');
-var <%= camelPluginName %> = require('./');
+import path from 'path';
+import test from 'ava';
+import gulpUtil from 'gulp-util';
+import fn from './';
 
-it('should ', function (cb) {
-	var stream = <%= camelPluginName %>();
+test.cb(t => {
+	const stream = fn();
 
-	stream.on('data', function (file) {
-		assert.strictEqual(file.contents.toString(), 'unicorns');
+	stream.once('data', file => {
+		t.is(file.contents.toString(), 'unicorns');
+		t.end();
 	});
 
-	stream.on('end', cb);
-
-	stream.write(new gutil.File({
+	stream.write(new gulpUtil.File({
 		base: __dirname,
-		path: __dirname + '/file.ext',
+		path: path.join(__dirname, 'file.ext'),
 		contents: new Buffer('unicorns')
 	}));
 
