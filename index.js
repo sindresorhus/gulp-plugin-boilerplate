@@ -1,10 +1,10 @@
 'use strict';
-var gutil = require('gulp-util');
-var through = require('through2');
-var someModule = require('some-module');
+const through = require('through2');
+const PluginError = require('plugin-error');
+const someModule = require('some-module');
 
-module.exports = function (opts) {
-	opts = opts || {};
+module.exports = options => {
+	options = options || {};
 
 	return through.obj(function (file, enc, cb) {
 		if (file.isNull()) {
@@ -13,15 +13,15 @@ module.exports = function (opts) {
 		}
 
 		if (file.isStream()) {
-			cb(new gutil.PluginError('gulp-<%= pluginName %>', 'Streaming not supported'));
+			cb(new PluginError('gulp-<%= pluginName %>', 'Streaming not supported'));
 			return;
 		}
 
 		try {
-			file.contents = new Buffer(someModule(file.contents.toString(), opts));
+			file.contents = Buffer.from(someModule(file.contents.toString(), options));
 			this.push(file);
 		} catch (err) {
-			this.emit('error', new gutil.PluginError('gulp-<%= pluginName %>', err));
+			this.emit('error', new PluginError('gulp-<%= pluginName %>', err));
 		}
 
 		cb();

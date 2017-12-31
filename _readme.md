@@ -16,7 +16,7 @@ $ npm install --save-dev gulp-<%= pluginName %>
 const gulp = require('gulp');
 const <%= camelPluginName %> = require('gulp-<%= pluginName %>');
 
-gulp.task('default', () => {
+gulp.task('default', () =>
 	gulp.src('src/file.ext')
 		.pipe(<%= camelPluginName %>())
 		.pipe(gulp.dest('dist'))
@@ -29,6 +29,8 @@ gulp.task('default', () => {
 ### <%= camelPluginName %>([options])
 
 #### options
+
+Type: `Object`
 
 ##### foo
 

@@ -1,6 +1,6 @@
 # gulp-plugin-boilerplate
 
-> Boilerplate to kickstart creating [gulp](http://gulpjs.com) plugins
+> Boilerplate to kickstart creating [Gulp](https://gulpjs.com) plugins
 
 Contains all the current best-practices.
 
@@ -20,4 +20,4 @@ There's also a [Yeoman generator](https://github.com/sindresorhus/generator-gulp
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
