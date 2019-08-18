@@ -2,10 +2,10 @@ import path from 'path';
 import test from 'ava';
 import Vinyl from 'vinyl';
 import pEvent from 'p-event';
-import fn from '.';
+import plugin from '.';
 
-test(async t => {
-	const stream = fn();
+test('main', async t => {
+	const stream = plugin();
 	const promise = pEvent(stream, 'data');
 
 	stream.end(new Vinyl({

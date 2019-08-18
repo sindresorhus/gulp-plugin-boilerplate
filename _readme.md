@@ -16,7 +16,7 @@ $ npm install --save-dev gulp-<%= pluginName %>
 const gulp = require('gulp');
 const <%= camelPluginName %> = require('gulp-<%= pluginName %>');
 
-gulp.task('default', () =>
+export.default = () => (
 	gulp.src('src/file.ext')
 		.pipe(<%= camelPluginName %>())
 		.pipe(gulp.dest('dist'))
@@ -26,11 +26,11 @@ gulp.task('default', () =>
 
 ## API
 
-### <%= camelPluginName %>([options])
+### <%= camelPluginName %>(options?)
 
 #### options
 
-Type: `Object`
+Type: `object`
 
 ##### foo
 
@@ -38,8 +38,3 @@ Type: `boolean`<br>
 Default: `false`
 
 Lorem ipsum.
-
-
-## License
-
-MIT © [<%= name %>](<%= website %>)

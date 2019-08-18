@@ -16,8 +16,3 @@ $ curl -fsSL https://github.com/sindresorhus/gulp-plugin-boilerplate/archive/mas
 You can also `git clone` or [download](https://github.com/sindresorhus/gulp-plugin-boilerplate/archive/master.zip) this repo, but then you'll have to rename `_readme.md` to `readme.md` and `_package.json` to `package.json`.
 
 There's also a [Yeoman generator](https://github.com/sindresorhus/generator-gulp-plugin-boilerplate).
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
