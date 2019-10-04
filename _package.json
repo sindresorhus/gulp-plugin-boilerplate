@@ -26,12 +26,17 @@
 		"plugin-error": "^1.0.1"
 	},
 	"devDependencies": {
-		"ava": "^2.3.0",
+		"ava": "^2.4.0",
 		"p-event": "^4.1.0",
-		"vinyl": "^2.1.0",
-		"xo": "^0.24.0"
+		"vinyl": "^2.2.0",
+		"xo": "^0.25.0"
 	},
 	"peerDependencies": {
 		"gulp": ">=4"
+	},
+	"peerDependenciesMeta": {
+		"gulp": {
+			"optional": true
+		}
 	}
 }
