@@ -1,4 +1,4 @@
-# gulp-<%= pluginName %> [![Build Status](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>.svg?branch=main)](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>)
+# gulp-<%= pluginName %>
 
 > My <%= superb %> gulp plugin
 
