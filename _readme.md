@@ -1,14 +1,12 @@
-# gulp-<%= pluginName %> [![Build Status](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>.svg?branch=master)](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>)
+# gulp-<%= pluginName %> [![Build Status](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>.svg?branch=main)](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>)
 
 > My <%= superb %> gulp plugin
-
 
 ## Install
 
 ```
 $ npm install --save-dev gulp-<%= pluginName %>
 ```
-
 
 ## Usage
 
@@ -23,7 +21,6 @@ export.default = () => (
 );
 ```
 
-
 ## API
 
 ### <%= camelPluginName %>(options?)
@@ -34,7 +31,7 @@ Type: `object`
 
 ##### foo
 
-Type: `boolean`<br>
+Type: `boolean`\
 Default: `false`
 
 Lorem ipsum.
