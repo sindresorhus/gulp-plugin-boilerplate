@@ -4,17 +4,17 @@
 
 ## Install
 
-```
-$ npm install --save-dev gulp-<%= pluginName %>
+```sh
+npm install --save-dev gulp-<%= pluginName %>
 ```
 
 ## Usage
 
 ```js
-const gulp = require('gulp');
-const <%= camelPluginName %> = require('gulp-<%= pluginName %>');
+import gulp from 'gulp';
+import <%= camelPluginName %> from 'gulp-<%= pluginName %>';
 
-export.default = () => (
+export default () => (
 	gulp.src('src/file.ext')
 		.pipe(<%= camelPluginName %>())
 		.pipe(gulp.dest('dist'))

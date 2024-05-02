@@ -1,27 +1,9 @@
-'use strict';
-const through = require('through2');
-const PluginError = require('plugin-error');
-const someModule = require('some-module');
+import {Buffer} from 'node:buffer';
+import {gulpPlugin} from 'gulp-plugin-extras';
 
-module.exports = (options = {}) => {
-	return through.obj(function (file, encoding, callback) {
-		if (file.isNull()) {
-			callback(null, file);
-			return;
-		}
-
-		if (file.isStream()) {
-			callback(new PluginError('gulp-<%= pluginName %>', 'Streaming not supported'));
-			return;
-		}
-
-		try {
-			file.contents = Buffer.from(someModule(file.contents.toString(), options));
-			this.push(file);
-		} catch (error) {
-			this.emit('error', new PluginError('gulp-<%= pluginName %>', error));
-		}
-
-		callback();
+export default function gulpPluginName() {
+	return gulpPlugin('gulp-<%= pluginName %>', file => {
+		file.contents = Buffer.concat([Buffer.from('Hello'), file.contents]);
+		return file;
 	});
-};
+}

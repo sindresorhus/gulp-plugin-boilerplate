@@ -9,8 +9,10 @@
 		"email": "<%= email %>",
 		"url": "<%= humanizedWebsite %>"
 	},
+	"type": "module",
+	"exports": "./index.js",
 	"engines": {
-		"node": ">=8"
+		"node": ">=18"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -22,17 +24,16 @@
 		"gulpplugin"
 	],
 	"dependencies": {
-		"through2": "^3.0.1",
-		"plugin-error": "^1.0.1"
+		"gulp-plugin-extras": "^1.0.0"
 	},
 	"devDependencies": {
-		"ava": "^2.4.0",
-		"p-event": "^4.1.0",
-		"vinyl": "^2.2.0",
-		"xo": "^0.25.0"
+		"ava": "^6.1.2",
+		"p-event": "^6.0.1",
+		"vinyl": "^3.0.0",
+		"xo": "^0.58.0"
 	},
 	"peerDependencies": {
-		"gulp": ">=4"
+		"gulp": ">=5"
 	},
 	"peerDependenciesMeta": {
 		"gulp": {
